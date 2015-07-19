@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Deborah Anne Harris</title>
+  <meta charset="UTF-8">
+<link rel="stylesheet" type="text/css"" href="../stylesheets/default.css">
+</head>
+
+<body>
+  <h1>Deborah Anne Harris</h1>
+    <!-- <img src="images/DAH_headshot.jpg" alt="DAH headshot"/> -->
+
+
+    <p><a href="../index.html">Home</a></p>
+    <p><a href="../About_Me/index.html">About Me</a></p>
+    <p><a href="../blog/index.html">Blog</a></p>
+    <p><a href="../Resources/index.html">Resources</a></p>
+      <!-- <p>Search Bar</p>  move Search Bar to right hand side beneath navigation bar; move Blogs I follow to right hand column side which would remain in CSS position fixed; add graphic for each blog posting; add graphic to top of blog -->
+    <!--<p>Favorite Blogs</p>
+      <p>Latest Blog</p> -->
+      <!-- copy and paste as many sections as you want to add paragraphs -->
+  <main>
+  <h1>Ruby Classes</h1>
+  <h2>Where are the Grandkids?</h2>
+  <h4>July 18, 2015</h4>
+
+  <section>
+    <p>
+      I had a brain infarction and couldn’t think of a “real world object” to use as an example of “Class”.  Then my friend Jennifer Poeng suggested that I read <a href="http://www.eriktrautman.com/posts/ruby-explained-classes">Erik Trautman’s</a> article about classes.
+      </p>
+      <p>
+      His use of Vikings as a class inspired me to think of my five (and counting) grandchildren.
+      <p>
+      The “class” method is a way to organize data among various different methods. I have set up a class named Grandchildren. My grandchildren have many different attributes to record but they all share the same basic information. I was interested in tracking their Full Name, Sex, Date of Birth, Favorite Activity, Favorite Food so I could keep track of their birthdays, potential recreational activities and seasonal gifting opportunities.
+      </p>
+      <p>
+      First, we would name the class Grandchildren and then #initialize the data that we want to track about my Grandchildren class (Full Name, Sex, Date of Birth, Favorite Activity, Favorite Food).
+      </p>
+      <p>
+        Next, we will set up individual instance variables that all class Grandchildren share but they have different values per individual. For example: “Mark Darrell Harris” has a different Full Name instance variable value than “Derek Oscar Fuchs” but they BOTH have a Full Name variable.
+        <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #0000aa">class</span> <span style="color: #00aa00; text-decoration: underline">Grandchildren</span>
+  <span style="color: #0000aa">def</span> <span style="color: #00aa00">initialize</span>(full_name, sex, date_of_birth, favorite_activity, favorite_food)
+    <span style="color: #aa0000">@full_name</span> = full_name
+    <span style="color: #aa0000">@sex</span> = sex
+    <span style="color: #aa0000">@date_of_birth</span> = date_of_birth
+    <span style="color: #aa0000">@favorite_activity</span> = favorite_activity
+    <span style="color: #aa0000">@favorite_food</span> = favorite_food
+  <span style="color: #0000aa">end</span>
+<span style="color: #0000aa">end</span>
+</pre></div>
+      </p>
+
+      <p>
+        Now how would an instance method apply to this example? What kind of activities or methods could we have class Grandchildren do?
+      </p>
+        <p>
+          We could define a method for birthday party and list the appropriate instance variables. Since these methods are being called or used by class Grandchildren they are called instance methods.
+          <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #0000aa">def</span> <span style="color: #00aa00">party</span>(full_name, date_of_birth, favorite_activity, favorite_food)
+      <span style="color: #aaaaaa; font-style: italic">#code for party preparations</span>
+    <span style="color: #0000aa">end</span>
+</pre></div>
+        </p>
+
+    <p>
+      In conclusion, this was a great topic to incorporate my interest in my grandchildren and also organize their disparate data. As I become more adept at setting up classes I will definitely start tracking my grandchildren in this manner. I'll be a #Dev Grandma for my grandkids.
+    </p>
+  </section>
+</main>
+</body>
+</html
