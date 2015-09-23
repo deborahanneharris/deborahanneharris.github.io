@@ -1,30 +1,78 @@
-
-<!DOCTYPE html>
 <html>
-<head>
-  <title>Deborah Anne Harris</title>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css"" href="stylesheets/default.css">
-</head>
-
-<body>
-  <h1>Deborah Anne Harris</h1>
-  <img id="headshot">
-<img src="images/DAH_headshot.jpg" alt="DAH headshot" class="align-center medium"/>
-
-<ul id="navigation">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="About_Me/index.html">About Me</a></li>
-    <li><a href="blog/index.html">Blog</a></li>
-    <li><a href="Resources/index.html">Resources</a></li>
-  </ul>
-  <h2>Find Me</h2>
-  <ul id="find-me">
-      <li><a href="https://twitter.com/DebDillerHarris">Twitter</a></li></p>
-      <li><a href="https://www.linkedin.com/pub/deborah-harris/a/486/9a">LinkedIn</a></li></p>
-      <li><a href="https://www.facebook.com/deborah.a.harris.92">Facebook</a></li></p>
-      <li><a href="https://github.com/deborahanneharris">GitHub</a></li></p>
-    </ul>
-      <!-- copy and paste as many sections as you want to add paragraphs -->
-</body>
-
+    <body>
+        <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css.css">  
+    <div class="container">
+        <div class="row" id="headerbar">
+            <a class="col-xs-1" href="#">About</a>
+            <a class="col-xs-1" href= "#">Blog</a>
+            <a class="col-xs-1" href= "#">Projects</a>
+            <a class="col-xs-1" href="#">Contact</a>
+        </div>
+        <div class="row">
+           <h1 class="nameheader col-xs-12">Deborah A. Harris</h1>
+        </div>
+        <div class="row experiences">
+                    <div class="language col-xs-3">
+                        <h2>Languages</h2>
+                        <ul>
+                            <li>Ruby</li>
+                            <li>JavaScript</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>SQL</li>
+                        </ul>
+                    </div>
+                    <div class="frameworks col-xs-3">
+                        <h2>Frameworks</h2>
+                        <ul>
+                            <li>Ruby on Rails</li>
+                            <li>Active Record</li>
+                            <li>jQuery</li>
+                            <li>d3.js</li>
+                        </ul>
+                    </div> 
+                    <div class="groupwork col-xs-3">
+                        <h2>Team Experiences</h2>
+                        <ul>
+                            <li>git/github</li>
+                            <li>Test Driven Development</li>
+                            <li>Unit Testing</li>
+                        </ul>
+                    </div> 
+                    <div class="tools col-xs-3">
+                        <h2>Tools</h2>
+                        <ul>
+                            <li>Chrome Developer Tools</li>
+                            <li>Sublime</li>
+                            <li>Node.js</li>
+                        </ul>
+                    </div>
+        </div>
+        <div class="row text-center mainprojects">
+            <div class="col-xs-12 col-sm-6 col-lg-3">
+                 <img src="http://static.giantbomb.com/uploads/scale_medium/21/210393/2609082-6196503875-13745.jpg"/>
+                <div class="darkness">
+                </div>
+                 <a href="#" class="projecttitle hide">Is Trix Edible?</a>
+                 
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-3">
+                <img src="http://onlinecasino-games.com/wp-content/uploads/2012/11/online-bingo.png"/>
+                <div class="darkness">
+                </div>
+                <a href="#" class="projecttitle hide"></a> 
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-3">
+                <img src="http://msms.dadeschools.net/gradebook.jpg"/>
+                 <div class="darkness">
+                </div>
+                 <a href="#" class="projecttitle hide"></a>
+            </div>
+        </div>
+    </div>
+    <script src="jquery-1.11.3.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="js.js"></script>
+    </body>
+</html>
