@@ -1,0 +1,134 @@
+
+ <h3>Loops in Ruby and JavaScript</h3>
+            <p><ul>
+              <h4><b>Comparing and contrasting the looping methods/functions in Ruby and JavaScript:</b></h4>
+                <li>#each and .forEach()</li>
+                <li>#map and .map()</li>
+                <li>#select and .filter()</li>
+                <li>#inject and .reduce()</li>
+                <li>#all? and .every()</li>
+                <li>#any? and .some()</li>
+                </ul></p>
+              <p>
+                <h4>#each and .forEach()</h4>
+                  <h5>Ruby #each</h5>
+                    <p>
+                      Calls the given block once for each element in self, passing that element as a parameter.
+                      <code><pre>
+                      a = [ "a", "b", "c" ]
+                      a.each {|x| print x, " -- " } #=> a -- b -- c --
+                    </pre></code>
+                    </p>
+                    <h5>JavaScript .Foreach()</h5>
+                    <p>
+                      The forEach() method executes a provided function once per array element.
+                      <code><pre>
+                      var a = [1, 2, 3];
+
+                      a.forEach(function(n) { console.log(n); })
+
+                      for (var i = 0; i < a.length; i++) {
+                        console.log(a[i]);
+                      }
+                    </pre></code>
+                    </p>
+                </p>
+              <p>
+                <h4>#map and .map()</h4>
+                  <h5>Ruby #map</h5>
+                  <p>Invokes the given block once for each element of self. Creates a new array containing the values returned by the block.
+                    <code><pre>
+                      a = [ "a", "b", "c", "d" ]
+                      a.map { |x| x + "!" }        #=> ["a!", "b!", "c!", "d!"]
+                      </pre></code>
+                  </p>
+                  <h5>JavaScript .map()</h5>
+                  <p>This JavaScript method .map calls a provided callback function once for each element in an array, in order, and constructs a new array from the results.
+                    <code><pre>
+                     var numbers = [1, 4, 9];
+                      var roots = numbers.map(Math.sqrt);
+                      // roots is now [1, 2, 3], numbers is still [1, 4, 9]
+                      </pre></code>
+                  </p>
+              </p>
+              <p>
+                <h4>#select and .filter()</h4>
+                  <h5>Ruby #select</h5>
+                   <p>Returns a new array containing all elements of ary for which the given block returns a true value.
+                    <code><pre>
+                      [1,2,3,4,5].select { |num|  num.even?  }   #=> [2, 4]
+                      </pre></code>
+                   </p>
+                  <h5>JavaScript .filter()</h5>
+                  <p>The filter() method creates a new array with all elements that pass the test implemented by the provided function.
+                    <code><pre>
+                      function isBigEnough(value) {
+                        return value >= 10;
+                      }
+                      var filtered = [12, 5, 8, 130, 44].filter(isBigEnough);
+                      // filtered is [12, 130, 44]
+                      </pre></code>
+                  </p>
+               </p>
+               <p>
+                <h4>#inject and .reduce()</h4>
+                  <h5>Ruby #inject</h5>
+                  <p>Combines all elements of enum by applying a binary operation, specified by a block or a symbol that names a method or operator.
+                    <code><pre>
+                      (5..10).inject { |sum, n| sum + n }   #=> 45
+                      </pre></code>
+                  </p>
+                  <h5>JavaScript .reduce()</h5>
+                  <p>The reduce() method applies a function against an accumulator and each value of the array (from left-to-right) to reduce it to a single value.
+                    <code><pre>
+                      var total = [0, 1, 2, 3].reduce(function(a, b) {
+                         return a + b;
+                      });
+                      // total == 6
+                      </pre></code>
+                  </p>
+                </p>
+                <p>
+                  <h4>#all? and .every()</h4>
+                  <h5>Ruby #all?</h5>
+                  <p>Passes each element of the collection to the given block. The method returns true if the block never returns false or nil. If the block is not given, Ruby adds an implicit block of { |obj| obj } which will cause all? to return true when none of the collection members are false or nil.
+                    <code><pre>
+                      %w[ant bear cat].all? { |word| word.length >= 3 } #=> true
+                      %w[ant bear cat].all? { |word| word.length >= 4 } #=> false
+                      [nil, true, 99].all?                              #=> false
+                      </pre></code>
+                  </p>
+                  <h5>JavaScript .every()</h5>
+                  <p>The every() method tests whether all elements in the array pass the test implemented by the provided function.
+                    <code><pre>
+                      function isBigEnough(element, index, array) {
+                        return element >= 10;
+                      }
+                      [12, 5, 8, 130, 44].every(isBigEnough);   // false
+                      [12, 54, 18, 130, 44].every(isBigEnough); // true
+                      </pre></code>
+                  </p>
+                </p>
+                <p>
+                  <h4>#any? and .some()</h4>
+                  <h5>Ruby #any?</h5>
+                  <p>Passes each element of the collection to the given block. The method returns true if the block ever returns a value other than false or nil. If the block is not given, Ruby adds an implicit block of { |obj| obj } that will cause any? to return true if at least one of the collection members is not false or nil.
+                    <code><pre>
+                      %w[ant bear cat].any? { |word| word.length >= 3 } #=> true
+                      %w[ant bear cat].any? { |word| word.length >= 4 } #=> true
+                      [nil, true, 99].any?                              #=> true
+                    </pre></code>
+                  </p>
+                  <h5>JavaScript .some()</h5>
+                  <p>The some() method tests whether some element in the array passes the test implemented by the provided function.
+                    <code><pre>
+                      function isBiggerThan10(element, index, array) {
+                        return element > 10;
+                      }
+                      [2, 5, 8, 1, 4].some(isBiggerThan10);  // false
+                      [12, 5, 8, 1, 4].some(isBiggerThan10); // true
+                      </pre></code>
+                  </p>
+                </p>
+<h3>JavaScript vs Ruby</h3>
+<li><a href="http://agentcooper.io/js-ruby-comparison/">Agent Cooper</a></li></p>
