@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Deborah Anne Harris</title>
+  <meta charset="UTF-8">
+<link rel="stylesheet" type="text/css"" href="../stylesheets/default.css">
+</head>
+
+<body>
+  <h1>Deborah Anne Harris</h1>
+    <!-- <img src="images/DAH_headshot.jpg" alt="DAH headshot"/> -->
+
+
+    <p><a href="../index.html">Home</a></p>
+    <p><a href="../About_Me/index.html">About Me</a></p>
+    <p><a href="../blog/index.html">Blog</a></p>
+    <p><a href="../Resources/index.html">Resources</a></p>
+      <!-- <p>Search Bar</p>  move Search Bar to right hand side beneath navigation bar; move Blogs I follow to right hand column side which would remain in CSS position fixed; add graphic for each blog posting; add graphic to top of blog -->
+    <!--<p>Favorite Blogs</p>
+      <p>Latest Blog</p> -->
+      <!-- copy and paste as many sections as you want to add paragraphs -->
+  <main>
+  <h1>Enumerable#cycle</h1>
+  <h2>Round, and Around We Go</h2>
+  <h4>July 11, 2015</h4>
+
+  <section>
+    <p>
+      My assignment this week was to select a Ruby Enumerable method. I chose Enumerable#cycle. I am still quite a novice at understanding the Ruby language but will do my best to explain this concept.
+    </p>
+    <p>
+      I spent significant time online attempting to find real world applications of Ruby cycle. I didn't find an indepth explanation in either of our current Ruby texts. Unfortunately, I wasn't able to find a good example to use in my explanation.
+
+      To understand what cycle will do here is the following example from Ruby-Docs:
+      <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">a = [<span style="color: #aa5500">&quot;a&quot;</span>, <span style="color: #aa5500">&quot;b&quot;</span>, <span style="color: #aa5500">&quot;c&quot;</span>]
+  a.cycle { |x| <span style="color: #00aaaa">puts</span> x }  <span style="color: #aaaaaa; font-style: italic"># print, a, b, c, a, b, c,.. forever.</span>
+  a.cycle(<span style="color: #009999">2</span>) { |x| <span style="color: #00aaaa">puts</span> x }  <span style="color: #aaaaaa; font-style: italic"># print, a, b, c, a, b, c.</span>
+</pre></div></p>
+      <p>
+      Essentially cycle allows the program to cycle over the data in the array and return it in one of three ways:
+      1. If there is not a set times for cycling through it will repeat infinitely.
+      2. It will cycle for a set amount of times if indicated.
+      3. If a non-positive number (-1, -2, etc.) is given or the collection is empty, it does nothing.
+      </p>
+      <p>
+      There is main problem that I identified from my research with the cycle method. The argument to #cycle specifies the number of times to cycle, but NOT the number of elements to cycle through. It doesn't seem to be a process that is very popular for regular usage on it's own. It seems to be combined with other Enumerables.
+    </p>
+    <p>
+      Fun fact: #reverse_cycle doesn't exist. To reverse your cycle reverse_each.cycle is the proper command.
+    </p>
+    <p>
+      In conclusion, passing an argument to cycle will completely go through the collection that many times. If no argument is passed, it goes infinitely (producing an infinite loop).
+    </p>
+  </section>
+</main>
+</body>
+</html
